@@ -24,6 +24,12 @@ type RootStackParamList = {
   Play: undefined;
   Services: undefined;
   Profile: undefined;
+  Transport: undefined;
+  Food: undefined;
+  Entertainment: undefined;
+  Government: undefined;
+  AddMoney: undefined;
+  Transfer: undefined;
 };
 
 const HomeScreen = () => {
@@ -38,7 +44,11 @@ const HomeScreen = () => {
     { id: '5', name: 'e-News', icon: '📰', color: '#FFE4E6', screen: 'News' },
     { id: '6', name: 'e-Health', icon: '❤️', color: '#FCE7F3', screen: 'Health' },
     { id: '7', name: 'e-Play', icon: '🎮', color: '#FEF3C7', screen: 'Play' },
-    { id: '8', name: 'e-Services', icon: '🛠️', color: '#CCFBF1', screen: 'Services' },
+    { id: '8', name: 'e-Voting', icon: '🗳️', color: '#CCFBF1', screen: 'Voting' },
+    { id: '9', name: 'e-Transport', icon: '🚗', color: '#E0F2FE', screen: 'Transport' },
+    { id: '10', name: 'e-Food', icon: '🍽️', color: '#FEF9C3', screen: 'Food' },
+    { id: '11', name: 'e-Entertainment', icon: '🎬', color: '#F3E8FF', screen: 'Entertainment' },
+    { id: '12', name: 'e-Government', icon: '🏛️', color: '#DCFCE7', screen: 'Government' },
   ];
 
   // Transactions Data
@@ -125,11 +135,17 @@ const HomeScreen = () => {
             <Text style={styles.trendText}>+2.5% from last month</Text>
           </View>
           <View style={styles.balanceActions}>
-            <TouchableOpacity style={styles.balanceButton}>
+            <TouchableOpacity 
+              style={styles.balanceButton}
+              onPress={() => navigation.navigate('AddMoney')}
+            >
               <Text style={styles.buttonIcon}>+</Text>
               <Text style={styles.buttonText}>Add Money</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.balanceButton}>
+            <TouchableOpacity 
+              style={styles.balanceButton}
+              onPress={() => navigation.navigate('Transfer')}
+            >
               <Text style={styles.buttonIcon}>⇄</Text>
               <Text style={styles.buttonText}>Transfer</Text>
             </TouchableOpacity>

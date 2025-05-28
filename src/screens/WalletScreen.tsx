@@ -18,7 +18,7 @@ type RootStackParamList = {
   Profile: undefined;
   SendMoney: undefined;
   ReceiveMoney: undefined;
-  AddFunds: undefined;
+  AddMoney: undefined;
   QRScanner: undefined;
   PayBills: undefined;
   Analytics: undefined;
@@ -102,7 +102,7 @@ const WalletScreen = () => {
             </TouchableOpacity>
             <TouchableOpacity 
               style={[styles.actionButton, styles.secondaryAction]}
-              onPress={() => navigation.navigate('AddFunds')}
+              onPress={() => navigation.navigate('AddMoney')}
             >
               <Text style={styles.actionButtonIcon}>+</Text>
               <Text style={styles.secondaryActionText}>Add</Text>

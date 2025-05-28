@@ -34,7 +34,14 @@ import {
   ReceiveMoneyScreen,
   PayBillsScreen,
   AnalyticsScreen,
-  CardsScreen
+  CardsScreen,
+  TransportScreen,
+  FoodScreen,
+  EntertainmentScreen,
+  GovernmentScreen,
+  VotingScreen,
+  AddMoneyScreen,
+  TransferScreen
 } from './src/screens';
 
 enableScreens();
@@ -66,6 +73,13 @@ type RootStackParamList = {
   PayBills: undefined;
   Analytics: undefined;
   Cards: undefined;
+  Transport: undefined;
+  Food: undefined;
+  Entertainment: undefined;
+  Government: undefined;
+  Voting: undefined;
+  AddMoney: undefined;
+  Transfer: undefined;
   
   // Learn Flow
   Learn: undefined;
@@ -139,6 +153,13 @@ function App(): React.JSX.Element {
           <Stack.Screen name="PayBills" component={PayBillsScreen} />
           <Stack.Screen name="Analytics" component={AnalyticsScreen} />
           <Stack.Screen name="Cards" component={CardsScreen} />
+          <Stack.Screen name="Transport" component={TransportScreen} />
+          <Stack.Screen name="Food" component={FoodScreen} />
+          <Stack.Screen name="Entertainment" component={EntertainmentScreen} />
+          <Stack.Screen name="Government" component={GovernmentScreen} />
+          <Stack.Screen name="Voting" component={VotingScreen} />
+          <Stack.Screen name="AddMoney" component={AddMoneyScreen} />
+          <Stack.Screen name="Transfer" component={TransferScreen} />
           
           {/* Learn Stack */}
           <Stack.Screen name="Learn" component={LearnScreen} />
