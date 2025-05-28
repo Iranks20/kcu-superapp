@@ -1,131 +1,158 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import { StatusBar, SafeAreaView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { enableScreens } from 'react-native-screens';
 import {
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+  WelcomeScreen,
+  LoginScreen,
+  SignupScreen,
+  OTPVerificationScreen,
+  HomeScreen,
+  ShopHomeScreen,
+  ProductDetailScreen,
+  ShopCategoryScreen,
+  CartScreen,
+  CheckoutScreen,
+  OrderConfirmationScreen,
+  WalletScreen,
+  QRScannerScreen,
+  LearnScreen,
+  CourseDetailScreen,
+  SocialScreen,
+  SocialFeedScreen,
+  SocialMessagesScreen,
+  SocialChatScreen,
+  NewsScreen,
+  HealthScreen,
+  MedicalAppointmentsScreen,
+  FitnessTrackingScreen,
+  PlayScreen,
+  VideoPlayerScreen,
+  ProfileScreen
+} from './src/screens';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+enableScreens();
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+// Define your complete navigation types
+type RootStackParamList = {
+  // Authentication Flow
+  Welcome: undefined;
+  Login: undefined;
+  Signup: undefined;
+  OTPVerification: undefined;
+  
+  // Main App
+  Home: undefined;
+  
+  // Shop Flow
+  ShopHome: undefined;
+  ProductDetail: { productId: string };
+  ShopCategory: { categoryId: string };
+  Cart: undefined;
+  Checkout: undefined;
+  OrderConfirmation: { orderId: string };
+  
+  // Wallet Flow
+  Wallet: undefined;
+  QRScanner: undefined;
+  
+  // Learn Flow
+  Learn: undefined;
+  CourseDetail: { courseId: string };
+  
+  // Social Flow
+  Social: undefined;
+  SocialFeed: undefined;
+  SocialMessages: undefined;
+  SocialChat: { chatId: string };
+  
+  // News Flow
+  News: undefined;
+  
+  // Health Flow
+  Health: undefined;
+  MedicalAppointments: undefined;
+  FitnessTracking: undefined;
+  
+  // Play Flow
+  Play: undefined;
+  VideoPlayer: { videoId: string };
+  
+  // Profile Flow
+  Profile: undefined;
+};
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  /*
-   * To keep the template simple and small we're adding padding to prevent view
-   * from rendering under the System UI.
-   * For bigger apps the recommendation is to use `react-native-safe-area-context`:
-   * https://github.com/AppAndFlow/react-native-safe-area-context
-   *
-   * You can read more about it here:
-   * https://github.com/react-native-community/discussions-and-proposals/discussions/827
-   */
-  const safePadding = '5%';
-
   return (
-    <View style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar 
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent={true}
       />
-      <ScrollView
-        style={backgroundStyle}>
-        <View style={{paddingRight: safePadding}}>
-          <Header/>
-        </View>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            paddingHorizontal: safePadding,
-            paddingBottom: safePadding,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </View>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Welcome"
+          screenOptions={{
+            headerShown: false,
+            contentStyle: {
+              backgroundColor: '#ffffff',
+              paddingTop: StatusBar.currentHeight
+            }
+          }}
+        >
+          {/* Authentication Stack */}
+          <Stack.Screen name="Welcome" component={WelcomeScreen} />
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Signup" component={SignupScreen} />
+          <Stack.Screen name="OTPVerification" component={OTPVerificationScreen} />
+          
+          {/* Main App Stack */}
+          <Stack.Screen name="Home" component={HomeScreen} />
+          
+          {/* Shop Stack */}
+          <Stack.Screen name="ShopHome" component={ShopHomeScreen} />
+          <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
+          <Stack.Screen name="ShopCategory" component={ShopCategoryScreen} />
+          <Stack.Screen name="Cart" component={CartScreen} />
+          <Stack.Screen name="Checkout" component={CheckoutScreen} />
+          <Stack.Screen name="OrderConfirmation" component={OrderConfirmationScreen} />
+          
+          {/* Wallet Stack */}
+          <Stack.Screen name="Wallet" component={WalletScreen} />
+          <Stack.Screen name="QRScanner" component={QRScannerScreen} />
+          
+          {/* Learn Stack */}
+          <Stack.Screen name="Learn" component={LearnScreen} />
+          <Stack.Screen name="CourseDetail" component={CourseDetailScreen} />
+          
+          {/* Social Stack */}
+          <Stack.Screen name="Social" component={SocialScreen} />
+          <Stack.Screen name="SocialFeed" component={SocialFeedScreen} />
+          <Stack.Screen name="SocialMessages" component={SocialMessagesScreen} />
+          <Stack.Screen name="SocialChat" component={SocialChatScreen} />
+          
+          {/* News Stack */}
+          <Stack.Screen name="News" component={NewsScreen} />
+          
+          {/* Health Stack */}
+          <Stack.Screen name="Health" component={HealthScreen} />
+          <Stack.Screen name="MedicalAppointments" component={MedicalAppointmentsScreen} />
+          <Stack.Screen name="FitnessTracking" component={FitnessTrackingScreen} />
+          
+          {/* Play Stack */}
+          <Stack.Screen name="Play" component={PlayScreen} />
+          <Stack.Screen name="VideoPlayer" component={VideoPlayerScreen} />
+          
+          {/* Profile Stack */}
+          <Stack.Screen name="Profile" component={ProfileScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
