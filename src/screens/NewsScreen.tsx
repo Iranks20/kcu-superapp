@@ -98,7 +98,7 @@ export default function NewsScreen() {
           <Text style={styles.sectionTitle}>Top Stories</Text>
           
           <View style={styles.storyCard}>
-            <View style={[styles.storyImage, { backgroundColor: '#4F46E5' }]} />
+            <View style={[styles.storyImage, { backgroundColor: '#315B0E' }]} />
             <View style={styles.storyContent}>
               <View style={styles.storyHeader}>
                 <View style={styles.techBadge}>
@@ -314,7 +314,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: 12,
@@ -334,14 +334,14 @@ const styles = StyleSheet.create({
   },
   activeTab: {
     borderBottomWidth: 2,
-    borderBottomColor: '#4F46E5',
+    borderBottomColor: '#315B0E',
   },
   tabText: {
     color: '#6B7280',
     fontSize: 14,
   },
   activeTabText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   breakingNewsContainer: {
@@ -438,7 +438,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   techBadgeText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 12,
     fontWeight: '600',
   },

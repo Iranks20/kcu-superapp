@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     right: -4,
     width: 20,
     height: 20,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 3,
   },
   activeIndicator: {
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     width: 12,
   },
   thumbnailsContainer: {
@@ -426,7 +426,7 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   activeThumbnail: {
-    borderColor: '#4F46E5',
+    borderColor: '#315B0E',
     borderWidth: 2,
   },
   thumbnailPlaceholder: {
@@ -490,7 +490,7 @@ const styles = StyleSheet.create({
   currentPrice: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#4F46E5',
+    color: '#315B0E',
     marginRight: 8,
   },
   originalPrice: {
@@ -526,7 +526,7 @@ const styles = StyleSheet.create({
   },
   seeAll: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   colorsContainer: {
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
     borderColor: '#E5E7EB',
   },
   selectedColor: {
-    borderColor: '#4F46E5',
+    borderColor: '#315B0E',
     borderWidth: 2,
   },
   colorCheck: {
@@ -663,7 +663,7 @@ const styles = StyleSheet.create({
   },
   similarProductPrice: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: 'bold',
     paddingHorizontal: 12,
     paddingBottom: 12,
@@ -685,11 +685,11 @@ const styles = StyleSheet.create({
   totalPrice: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#4F46E5',
+    color: '#315B0E',
   },
   addToCartButton: {
     flexDirection: 'row',
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 12,
     paddingVertical: 14,
     paddingHorizontal: 20,

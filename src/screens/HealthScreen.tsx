@@ -222,7 +222,7 @@ export default function HealthScreen() {
             
             <View style={styles.tipsContainer}>
               <View style={styles.tipCard}>
-                <View style={[styles.tipImage, { backgroundColor: '#4F46E5' }]} />
+                <View style={[styles.tipImage, { backgroundColor: '#315B0E' }]} />
                 <View style={styles.tipContent}>
                   <View style={styles.tipBadge}>
                     <Text style={styles.tipBadgeText}>Fitness</Text>
@@ -626,7 +626,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   statusText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 12,
     fontWeight: '500',
   },

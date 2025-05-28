@@ -44,7 +44,7 @@ const LearnScreen = () => {
       rating: 4.8,
       icon: '💻',
       bgColor: '#C7D2FE',
-      iconColor: '#4F46E5'
+      iconColor: '#315B0E'
     },
     { 
       id: '2', 
@@ -449,7 +449,7 @@ const styles = StyleSheet.create({
   },
   seeAll: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   coursesList: {
@@ -653,7 +653,7 @@ const styles = StyleSheet.create({
   recommendedPrice: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#4F46E5',
+    color: '#315B0E',
   },
   bottomNav: {
     flexDirection: 'row',

@@ -170,10 +170,10 @@ const styles = StyleSheet.create({
   },
   activeTab: {
     borderBottomWidth: 2,
-    borderBottomColor: '#4f46e5',
+    borderBottomColor: '#315B0E',
   },
   activeTabText: {
-    color: '#4f46e5',
+    color: '#315B0E',
     fontWeight: '600',
   },
   tabText: {
@@ -246,14 +246,14 @@ const styles = StyleSheet.create({
   },
   checkmark: {
     fontSize: 12,
-    color: '#4f46e5',
+    color: '#315B0E',
   },
   rememberMeText: {
     fontSize: 14,
     color: '#374151',
   },
   loginButton: {
-    backgroundColor: '#4f46e5',
+    backgroundColor: '#315B0E',
     padding: 16,
     borderRadius: 12,
     alignItems: 'center',
@@ -272,7 +272,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   signupLink: {
-    color: '#4f46e5',
+    color: '#315B0E',
     fontWeight: '500',
   },
 });

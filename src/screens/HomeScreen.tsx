@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
   avatar: {
     width: 40,
     height: 40,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
@@ -356,7 +356,7 @@ const styles = StyleSheet.create({
     paddingBottom: 80,
   },
   balanceCard: {
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 16,
     padding: 16,
     margin: 16,
@@ -444,7 +444,7 @@ const styles = StyleSheet.create({
   },
   seeAll: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   servicesContainer: {
@@ -601,7 +601,7 @@ const styles = StyleSheet.create({
   },
   widgetAction: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   bottomNav: {
@@ -632,7 +632,7 @@ const styles = StyleSheet.create({
     color: '#6B7280',
   },
   activeNav: {
-    color: '#4F46E5',
+    color: '#315B0E',
   },
 });
 

@@ -29,7 +29,12 @@ import {
   FitnessTrackingScreen,
   PlayScreen,
   VideoPlayerScreen,
-  ProfileScreen
+  ProfileScreen,
+  SendMoneyScreen,
+  ReceiveMoneyScreen,
+  PayBillsScreen,
+  AnalyticsScreen,
+  CardsScreen
 } from './src/screens';
 
 enableScreens();
@@ -56,6 +61,11 @@ type RootStackParamList = {
   // Wallet Flow
   Wallet: undefined;
   QRScanner: undefined;
+  SendMoney: undefined;
+  ReceiveMoney: undefined;
+  PayBills: undefined;
+  Analytics: undefined;
+  Cards: undefined;
   
   // Learn Flow
   Learn: undefined;
@@ -124,6 +134,11 @@ function App(): React.JSX.Element {
           {/* Wallet Stack */}
           <Stack.Screen name="Wallet" component={WalletScreen} />
           <Stack.Screen name="QRScanner" component={QRScannerScreen} />
+          <Stack.Screen name="SendMoney" component={SendMoneyScreen} />
+          <Stack.Screen name="ReceiveMoney" component={ReceiveMoneyScreen} />
+          <Stack.Screen name="PayBills" component={PayBillsScreen} />
+          <Stack.Screen name="Analytics" component={AnalyticsScreen} />
+          <Stack.Screen name="Cards" component={CardsScreen} />
           
           {/* Learn Stack */}
           <Stack.Screen name="Learn" component={LearnScreen} />

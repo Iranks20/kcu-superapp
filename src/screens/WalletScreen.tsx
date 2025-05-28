@@ -20,6 +20,9 @@ type RootStackParamList = {
   ReceiveMoney: undefined;
   AddFunds: undefined;
   QRScanner: undefined;
+  PayBills: undefined;
+  Analytics: undefined;
+  Cards: undefined;
 };
 
 const WalletScreen = () => {
@@ -28,9 +31,9 @@ const WalletScreen = () => {
   // Quick Actions Data
   const quickActions = [
     { id: '1', name: 'Scan QR', icon: '📷', color: '#EDE9FE', screen: 'QRScanner' },
-    { id: '2', name: 'Cards', icon: '💳', color: '#DBEAFE', screen: 'Wallet' },
-    { id: '3', name: 'Pay Bills', icon: '🧾', color: '#D1FAE5', screen: 'Wallet' },
-    { id: '4', name: 'Analytics', icon: '📊', color: '#FEF3C7', screen: 'Wallet' },
+    { id: '2', name: 'Cards', icon: '💳', color: '#DBEAFE', screen: 'Cards' },
+    { id: '3', name: 'Pay Bills', icon: '🧾', color: '#D1FAE5', screen: 'PayBills' },
+    { id: '4', name: 'Analytics', icon: '📊', color: '#FEF3C7', screen: 'Analytics' },
   ];
 
   // Transactions Data
@@ -243,7 +246,7 @@ const styles = StyleSheet.create({
     marginTop: -35,
   },
   header: {
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     paddingTop: 50,
     paddingBottom: 24,
     paddingHorizontal: 16,
@@ -348,14 +351,14 @@ const styles = StyleSheet.create({
   },
   actionButtonIcon: {
     fontSize: 16,
-    color: '#4F46E5',
+    color: '#315B0E',
   },
   actionSendButtonIcon: {
     fontSize: 16,
     color: 'white',
   },
   primaryAction: {
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
   },
   primaryActionText: {
     color: 'white',
@@ -366,7 +369,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E0E7FF',
   },
   secondaryActionText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 14,
     fontWeight: '500',
   },
@@ -430,7 +433,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E0E7FF',
   },
   activeFilterText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 12,
     fontWeight: '500',
   },
@@ -440,7 +443,7 @@ const styles = StyleSheet.create({
   },
   seeAll: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   transactionList: {
@@ -551,7 +554,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   paymentButtonText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 12,
     fontWeight: '500',
   },
@@ -582,7 +585,7 @@ const styles = StyleSheet.create({
     color: '#6B7280',
   },
   activeNav: {
-    color: '#4F46E5',
+    color: '#315B0E',
   },
 });
 

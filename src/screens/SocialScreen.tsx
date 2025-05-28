@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: 12,
@@ -412,14 +412,14 @@ const styles = StyleSheet.create({
   },
   activeTab: {
     borderBottomWidth: 2,
-    borderBottomColor: '#4F46E5',
+    borderBottomColor: '#315B0E',
   },
   tabText: {
     color: '#6B7280',
     fontSize: 14,
   },
   activeTabText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   storiesContainer: {
@@ -453,7 +453,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   storyCircleActive: {
-    borderColor: '#4F46E5',
+    borderColor: '#315B0E',
   },
   storyContent: {
     width: '100%',
@@ -464,7 +464,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -623,13 +623,13 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   activeNavText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   iconText: {
     fontSize: 20,
   },
   activeIconText: {
-    color: '#4F46E5',
+    color: '#315B0E',
   },
 });

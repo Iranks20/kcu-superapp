@@ -197,11 +197,11 @@ const styles = StyleSheet.create({
     color: '#6b7280',
   },
   timerHighlight: {
-    color: '#4f46e5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   verifyButton: {
-    backgroundColor: '#4f46e5',
+    backgroundColor: '#315B0E',
     padding: 16,
     borderRadius: 12,
     alignItems: 'center',
@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   resendLink: {
-    color: '#4f46e5',
+    color: '#315B0E',
     fontWeight: '500',
   },
 });

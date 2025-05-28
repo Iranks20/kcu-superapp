@@ -360,7 +360,7 @@ const styles = StyleSheet.create({
     right: -4,
     width: 20,
     height: 20,
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -394,7 +394,7 @@ const styles = StyleSheet.create({
     paddingBottom: 80,
   },
   promotionCard: {
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#315B0E',
     borderRadius: 16,
     margin: 16,
     padding: 16,
@@ -444,7 +444,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   promotionButtonText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 14,
     fontWeight: '500',
   },
@@ -494,7 +494,7 @@ const styles = StyleSheet.create({
   },
   seeAll: {
     fontSize: 14,
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
   categoriesContainer: {
@@ -586,7 +586,7 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#4F46E5',
+    color: '#315B0E',
   },
   addButton: {
     width: 28,
@@ -597,7 +597,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addButtonText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontSize: 14,
     fontWeight: 'bold',
   },
@@ -648,10 +648,10 @@ const styles = StyleSheet.create({
     color: '#6B7280',
   },
   activeNavIcon: {
-    color: '#4F46E5',
+    color: '#315B0E',
   },
   activeNavText: {
-    color: '#4F46E5',
+    color: '#315B0E',
     fontWeight: '500',
   },
 });

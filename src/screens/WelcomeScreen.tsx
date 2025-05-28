@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 96,
     height: 96,
-    backgroundColor: 'green',
+    backgroundColor: '#315B0E',
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   loginButton: {
-    backgroundColor: 'green',
+    backgroundColor: '#315B0E',
     padding: 16,
     borderRadius: 12,
     marginBottom: 12,
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     elevation: 1,
   },
   signupButtonText: {
-    color: 'green',
+    color: '#315B0E',
     textAlign: 'center',
     fontWeight: '600',
     fontSize: 16,
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   link: {
-    color: 'green',
+    color: '#315B0E',
     textDecorationLine: 'underline',
   },
 });
